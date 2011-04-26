@@ -13,19 +13,19 @@ function setkmllayer(select_form){
   layer.setMap(null);
   switch(select_form.value){
     case "soundenv":
-      layer = new google.maps.KmlLayer('soundenv2.kml');
+      layer = new google.maps.KmlLayer('http://bengbumap.googlecode.com/svn/trunk/soundenv2.kml');
       layer.setMap(map);
       break;
     case "waterenv":
-      layer = new google.maps.KmlLayer('waterenv2.kml');
+      layer = new google.maps.KmlLayer('http://bengbumap.googlecode.com/svn/trunk/waterenv2.kml');
       layer.setMap(map);
       break;
     case "grassenv":
-      layer = new google.maps.KmlLayer('grassenv.kml');
+      layer = new google.maps.KmlLayer('http://bengbumap.googlecode.com/svn/trunk/grassenv.kml');
       layer.setMap(map);
       break;
     case "gasenv":
-      layer = new google.maps.KmlLayer('gasenv.kml');
+      layer = new google.maps.KmlLayer('http://bengbumap.googlecode.com/svn/trunk/gasenv.kml');
       layer.setMap(map);
       break;
   }
@@ -38,7 +38,7 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  layer = new google.maps.KmlLayer('soundenv2.kml');
+  layer = new google.maps.KmlLayer('http://bengbumap.googlecode.com/svn/trunk/soundenv2.kml');
   layer.setMap(map);
 }
 </script>
